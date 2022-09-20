@@ -6,3 +6,8 @@ body h1{
     text-align: center;
     text-justify: auto;
 }
+.backgroundBox{
+    background-color: rgb(95, 14, 95);
+    margin-bottom: 5px;
+    padding: 3px;
+}

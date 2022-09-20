@@ -11,10 +11,11 @@
     />
   </head>
   <body>
-    <div class="container-fluid">
       <div class="container">
-        <h1 class="color:white">Week 12 Project</h1>
-        <form class="text-white">
+        <div class="backgroundBox">
+          <h1 class="color:white">Week 12 Project</h1>
+        </div>
+        <form class="text-white" id="form" input type="submit">
           <div class="form-group">
             <label for="emailAddress" class="color:white">Email Address</label>
             <input
@@ -45,16 +46,42 @@
           </div>
           <div class="m-3">
             <button type="submit" class="btn btn-primary" id="submitButton">
-              Submit
+              Post Data
             </button>
           </div>
         </form>
       </div>
       <div class="container">
-        <div>
-            <h2></h2>
+        <div class="backgroundBox">
+          <div class="text-center text-white">
+          <h2>Data Table</h2>
         </div>
-      </div>
+          <form>
+            <div class="m-3">
+              <button type="submit" class="btn btn-primary" id="listDataButton">
+                Get Data
+              </button>
+              <button type="submit" class="btn btn-primary" id="listDataButton">
+                Update Data
+              </button>
+              <input type="text" id="deleteInputField" placeholder="Input ID you want to Delete" size="25">
+              <button type="submit" class="btn btn-primary" id="deleteDataButton">
+                Delete Data
+              </button>
+            </div>
+          </form>
+          <table id="dataTable" class="table table-striped table-dark">
+            <thead>
+              <th>First Name:</th>
+              <th>Last Name:</th>
+              <th>Email Address:</th>
+              <th>ID:</th>
+            </thead>
+            <tbody id="dataBody">
+            </tbody> 
+          </table>
+          </div>
+        </div>
     </div>
     <link rel="stylesheet" href="index.css" />
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
